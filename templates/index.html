@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+    这里是首页
+    ｛｛ index｝｝
+     {{ tuplel }}
+     <ul>
+         {% for t in tuplel %}
+            {% if t == 1 %}
+                <li style="color: green">这是1，{{ t }}</li>
+         {% else %}
+
+            <li style="color: red">这不是1，｛｛t｝｝</li>
+         {% endfor %}
+     </ul>
+
+</body>
+</html>
